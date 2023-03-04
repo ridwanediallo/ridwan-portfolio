@@ -3,12 +3,11 @@ import React from 'react';
 import { VscGithub } from 'react-icons/vsc';
 import { FaLinkedin } from 'react-icons/fa';
 
-import image from '../images/developer_male.jpg'
-import { Link } from 'react-router-dom';
+import image from '../images/undraw_Developer_activity_re_39tg.png'
 
 const Hero = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font bg-black">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <img
@@ -18,19 +17,22 @@ const Hero = () => {
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-            Before they sold out
-            <br className="hidden lg:inline-block" />
-            readymade gluten
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            Hi <span className="animate-[wave_5s_ease-in-out_2]">👋</span>,
+            <br className="hidden lg:inline-block" />I am Ridwan
           </h1>
-          <p className="mb-8 leading-relaxed">
-            Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
-            plant cold-pressed tacos poke beard tote bag. Heirloom echo park
-            mlkshk tote bag selvage hot chicken authentic tumeric truffaut
-            hexagon try-hard chambray.
+          <p className="mb-8  text-white text-base body-font">
+            I am a Full-Stack software engineer, currently working as Code
+            Reviewer At Microverse. I have more that one year of experience in
+            writing code. I am looking for a position as a backend, frontend, or
+            full-stack web developer. I am a dedicated and driven professional
+            who is eager to build, learn, grow, and be a valuable member of a
+            software development team. I have experience working with Ruby,
+            JavaScript, PostgreSQL, React, Git, Ruby on Rails, HTML5, CSS3, and
+            various web frameworks such as Ruby on Rails, React, and Express.
           </p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <button className="inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg">
               Contact me
             </button>
             <a href="https://github.com/ridwanediallo">
