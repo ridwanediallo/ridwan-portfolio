@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { VscGithub } from 'react-icons/vsc';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 import image from '../images/undraw_Developer_activity_re_39tg.png'
 
@@ -32,7 +32,7 @@ const Hero = () => {
             various web frameworks such as Ruby on Rails, React, and Express.
           </p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg">
+            <button className="inline-flex text-white bg-blue-600 border-0 py-2 px-6 focus:outline-none hover:bg-transparent rounded text-lg">
               Contact me
             </button>
             <a href="https://github.com/ridwanediallo">
@@ -40,6 +40,9 @@ const Hero = () => {
             </a>
             <a href="https://www.linkedin.com/in/ridwan-diallo/">
               <FaLinkedin className="text-4xl mt-1" />
+            </a>
+            <a href="https://twitter.com/RidwaneD">
+              <FaTwitter className="text-4xl mt-1 ml-6" />
             </a>
           </div>
         </div>
