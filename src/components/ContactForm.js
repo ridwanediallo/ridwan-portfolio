@@ -14,10 +14,17 @@ const ContactForm = () => {
           </p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
-          <div className="flex flex-wrap -m-2">
+          <form
+            action="https://formspree.io/f/xwkyvenp"
+            method='post'
+            className="flex flex-wrap -m-2"
+          >
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label htmlFor="name" className="leading-7 text-sm text-gray-600">
+                <label
+                  htmlFor="name"
+                  className="leading-7 text-sm text-gray-600"
+                >
                   Name
                 </label>
                 <input
@@ -30,7 +37,10 @@ const ContactForm = () => {
             </div>
             <div className="p-2 w-1/2">
               <div className="relative">
-                <label htmlFor="email" className="leading-7 text-sm text-gray-600">
+                <label
+                  htmlFor="email"
+                  className="leading-7 text-sm text-gray-600"
+                >
                   Email
                 </label>
                 <input
@@ -43,7 +53,10 @@ const ContactForm = () => {
             </div>
             <div className="p-2 w-full">
               <div className="relative">
-                <label htmlFor="message" className="leading-7 text-sm text-gray-600">
+                <label
+                  htmlFor="message"
+                  className="leading-7 text-sm text-gray-600"
+                >
                   Message
                 </label>
                 <textarea
@@ -56,11 +69,11 @@ const ContactForm = () => {
               </div>
             </div>
             <div className="p-2 w-full">
-              <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <button className="flex mx-auto text-white bg-blue-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-500 rounded text-lg">
                 Button
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
