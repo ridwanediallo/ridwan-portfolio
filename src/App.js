@@ -1,4 +1,5 @@
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
 import Recommendation from "./components/Recommendation";
@@ -14,6 +15,7 @@ function App() {
       <ContactForm />
       {/* <Recommendation /> */}
       {/* <WorkSection /> */}
+      <Footer />
     </div>
   );
 }
