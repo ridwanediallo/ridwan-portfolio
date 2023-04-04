@@ -8,7 +8,7 @@ const ContactForm = () => {
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
             Contact Us
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-black">
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
             gentrify.
           </p>
@@ -16,14 +16,14 @@ const ContactForm = () => {
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <form
             action="https://formspree.io/f/xwkyvenp"
-            method='post'
+            method="post"
             className="flex flex-wrap -m-2"
           >
             <div className="p-2 w-1/2">
               <div className="relative">
                 <label
                   htmlFor="name"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-7 text-sm text-gray-900"
                 >
                   Name
                 </label>
@@ -39,7 +39,7 @@ const ContactForm = () => {
               <div className="relative">
                 <label
                   htmlFor="email"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-7 text-sm text-gray-900"
                 >
                   Email
                 </label>
@@ -55,7 +55,7 @@ const ContactForm = () => {
               <div className="relative">
                 <label
                   htmlFor="message"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-7 text-sm text-gray-900"
                 >
                   Message
                 </label>
@@ -69,8 +69,8 @@ const ContactForm = () => {
               </div>
             </div>
             <div className="p-2 w-full">
-              <button className="flex mx-auto text-white bg-blue-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-500 rounded text-lg">
-                Button
+              <button className="flex mx-auto rounded-lg bg-blue-600 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-500/20 transition-all hover:shadow-lg hover:shadow-gray-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                Contact me
               </button>
             </div>
           </form>
