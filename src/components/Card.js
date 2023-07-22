@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../images/bookstore.png';
+// import image from '../images/bookstore.png';
 
 const Card = ({ data }) => {
    console.log(data)
@@ -11,8 +11,8 @@ const Card = ({ data }) => {
             <a href="#" blur-shadow-image="true">
               <img
                 className="w-auto rounded-lg"
-                src={image}
-                // src={`../images/${data.image}`}
+                // src={image}
+                src={`${data.image}`}
                 alt="screenshot"
               />
             </a>
