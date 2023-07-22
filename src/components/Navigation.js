@@ -51,7 +51,7 @@ function Navigation({ fixed }) {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <img
               src={profile}
-              className="mr-3 h-6 sm:h-9 rounded-full"
+              className="ml-3 h-6 sm:h-9 rounded-full"
               alt="Flowbite Logo"
             />
             <button
