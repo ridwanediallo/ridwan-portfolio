@@ -27,8 +27,8 @@ const Tabs = ({ color }) => {
   };
   return (
     <>
-      <div className="text-center mt-28 mb-14 border-b-2">
-        <h1 className="text-xl">Recent Projects</h1>
+      <div className=" text-center mt-28 mb-14 border-b-[3px] border-blue-600">
+        <h1 className="text-xl">Recent Projects</h1> <br />
       </div>
 
       <div className="flex flex-wrap justify-center">
@@ -66,7 +66,7 @@ const Tabs = ({ color }) => {
                 href="#link2"
                 role="tablist"
               >
-                Simple
+                Front-End Projects
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -82,7 +82,7 @@ const Tabs = ({ color }) => {
                 href="#link3"
                 role="tablist"
               >
-                Full-Stack
+                Full-Stack Project
               </a>
             </li>
           </ul>
@@ -116,7 +116,7 @@ const Tabs = ({ color }) => {
 export default function TabsRender() {
   return (
     <>
-      <Tabs color="blue" />;
+      <Tabs color="blue" />
     </>
   );
 }
