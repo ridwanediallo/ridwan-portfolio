@@ -5,40 +5,32 @@ const skills = {
     {
       name: 'JavaScript',
       icon: '/images/javascript_icon.png',
-      //   icon: 'fab fa-js-square',
     },
     {
       name: 'HTML/CSS',
       icon: '/images/html5_icon.png',
-      //   icon: 'fas fa-code',
     },
     {
       name: 'Ruby',
       icon: '/images/ruby_icon.png',
-      //   icon: 'fab fa-js-square',
     },
     {
       name: 'C#',
       icon: '/images/csharp_icon.png',
-      //   icon: 'fas fa-code',
     },
     {
       name: 'Node.js',
       icon: '/images/node_js_icon.png',
-      //   icon: 'fas fa-code',
     },
     {
       name: 'PostgreSQL',
       icon: '/images/postgres_icon.png',
-      //   icon: 'fas fa-code',
     },
-    // Add more languages
   ],
   frameworks: [
     {
       name: 'React.js',
       icon: '/images/react.png',
-      //   icon: 'fab fa-react',
     },
     {
       name: 'Rails',
@@ -57,12 +49,10 @@ const skills = {
     {
       name: 'GitHub',
       icon: '/images/github_icon.png',
-      //   icon: 'fas fa-code',
     },
     {
       name: 'VS Code',
       icon: '/images/visual-studio_icon.png',
-      //   icon: 'fas fa-code',
     },
     // Add more tools
   ],
