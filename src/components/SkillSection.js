@@ -9,7 +9,7 @@ const skills = {
     },
     {
       name: 'HTML/CSS',
-      icon: '/images/react.png',
+      icon: '/images/html5_icon.png',
       //   icon: 'fas fa-code',
     },
     {
@@ -18,8 +18,18 @@ const skills = {
       //   icon: 'fab fa-js-square',
     },
     {
-      name: 'HTML/CSS',
-      icon: '/images/react.png',
+      name: 'C#',
+      icon: '/images/csharp_icon.png',
+      //   icon: 'fas fa-code',
+    },
+    {
+      name: 'Node.js',
+      icon: '/images/node_js_icon.png',
+      //   icon: 'fas fa-code',
+    },
+    {
+      name: 'PostgreSQL',
+      icon: '/images/postgres_icon.png',
       //   icon: 'fas fa-code',
     },
     // Add more languages
@@ -31,28 +41,27 @@ const skills = {
       //   icon: 'fab fa-react',
     },
     {
-      name: 'Node.js',
-      icon: '/images/react.png',
+      name: 'Rails',
+      icon: '/images/rails_icon.png',
     },
     {
-      name: 'React.js',
+      name: 'Express.js',
       icon: '/images/react.png',
-    },
-    {
-      name: 'Node.js',
-      icon: '/images/react.png',
-      //   icon: 'fab fa-node',
-    },
-    // Add more frameworks
+    }
   ],
   tools: [
     {
       name: 'Git',
-      icon: '/images/react.png',
+      icon: '/images/git_icon.png',
+    },
+    {
+      name: 'GitHub',
+      icon: '/images/github_icon.png',
+      //   icon: 'fas fa-code',
     },
     {
       name: 'VS Code',
-      icon: '/images/react.png',
+      icon: '/images/visual-studio_icon.png',
       //   icon: 'fas fa-code',
     },
     // Add more tools
@@ -86,7 +95,7 @@ const SkillSection = () => {
   return (
     <section className="bg-blue-600 py-24">
       <div className="container mx-auto px-16 md:px-0">
-        <h2 className="text-3xl font-semibold mb-4 text-white">Skills</h2>
+        <h2 className="text-3xl font-semibold mb-10 text-white text-center">Skills</h2>
         <div className="flex flex-wrap lg:justify-between gap-10">
           <SkillCategory category="Languages" skills={skills.languages} />
           <SkillCategory category="Frameworks" skills={skills.frameworks} />
