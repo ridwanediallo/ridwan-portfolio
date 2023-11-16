@@ -5,7 +5,7 @@ const Card = ({ data }) => {
     <>
       {data.map((data) => (
         <div className="w-full mb-6 transition-transform" key={data.id}>
-          <div className="mx-4 -mt-6 translate-y-0">
+          <div className="mx-4 -mt-6">
             <a href={data.liveLink} blur-shadow-image="true">
               <img
                 className="w-auto rounded-lg shadow-md"
