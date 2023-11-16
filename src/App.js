@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from 'react';
-
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Navigation from "./components/Navigation";
 import NavigationBar from "./components/NavigationBar";
-import Recommendation from "./components/Recommendation";
 import SkillSection from "./components/SkillSection";
 import TabsRender from "./components/Tab";
-// import WorkSection from "./components/WorkSection";
 
 function App() {
   const [scrollingPastHero, setScrollingPastHero] = useState(false);
@@ -29,14 +25,11 @@ function App() {
 
   return (
     <div>
-      {/* <Navigation /> */}
       <NavigationBar scrollingPastHero={scrollingPastHero}/>
       <Hero/>
       <TabsRender />
       <SkillSection />
       <ContactForm />
-      {/* <Recommendation /> */}
-      {/* <WorkSection /> */}
       <Footer />
     </div>
   );
