@@ -7,12 +7,12 @@ const ContactForm = () => {
       <div className=" text-center mt-28 mb-14">
         <h1 className="text-xl">Contact me</h1> <br />
       </div>
-      <div className="flex flex-wrap justify-center text-gray-600 body-font relative">
+      <div className="flex flex-wrap justify-center text-gray-600 body-font ">
         <div className="container flex flex-wrap shadow-lg">
           <img
             src={contactImage}
             alt="Image"
-            class="md:w-2/5 rounded-l-lg object-cover mr-4"
+            className="md:w-2/5 rounded-l-lg object-cover mr-4"
           />
           <form
             action="https://formspree.io/f/xwkyvenp"
@@ -20,7 +20,7 @@ const ContactForm = () => {
             className="flex flex-wrap -m-2 md:w-3/5"
           >
             <div className="p-2 w-1/2">
-              <div className="relative">
+              <div className="">
                 <label
                   htmlFor="name"
                   className="leading-7 text-sm text-gray-900"
@@ -36,7 +36,7 @@ const ContactForm = () => {
               </div>
             </div>
             <div className="p-2 w-1/2">
-              <div className="relative">
+              <div className="">
                 <label
                   htmlFor="email"
                   className="leading-7 text-sm text-gray-900"
@@ -52,7 +52,7 @@ const ContactForm = () => {
               </div>
             </div>
             <div className="p-2 w-full">
-              <div className="relative">
+              <div className="">
                 <label
                   htmlFor="message"
                   className="leading-7 text-sm text-gray-900"
