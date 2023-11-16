@@ -1,48 +1,9 @@
-import { Navbar } from 'flowbite-react';
+import { useState } from 'react';
 import profile from '../images/ridwan-trans-bg.png';
-
-// const Navigation = () => {
-//   return (
-//     <section className="fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-//       <Navbar fluid={true} rounded={true} className="py-6">
-//         <Navbar.Brand href="https://flowbite.com/">
-//           <img
-//             src={profile}
-//             className="mr-3 h-6 sm:h-9 rounded-full ml-64"
-//             alt="Flowbite Logo"
-//           />
-//           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-//             Ridwan
-//           </span>
-//         </Navbar.Brand>
-//         <div className="flex md:order-2">
-//           <Navbar.Toggle />
-//         </div>
-//         <Navbar.Collapse className="ml-auto mr-64">
-//           <Navbar.Link href="/navbars" active={true} className="text-xl">
-//             Work
-//           </Navbar.Link>
-//           <Navbar.Link href="/navbars" className="text-xl">
-//             Skills
-//           </Navbar.Link>
-//           <Navbar.Link href="/navbars" className="text-xl">
-//             Recommendation
-//           </Navbar.Link>
-//           <Navbar.Link href="/navbars" className="text-xl">
-//             Contact
-//           </Navbar.Link>
-//         </Navbar.Collapse>
-//       </Navbar>
-//     </section>
-//   );
-// }
-
-// export default Navigation
-import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 function Navigation({ fixed }) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <nav className="fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 py-6 bg-black">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
