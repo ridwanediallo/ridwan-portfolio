@@ -27,8 +27,8 @@ const Tabs = ({ color }) => {
   };
   return (
     <>
-      <div className=" text-center mt-28 mb-14 border-b-[3px] border-blue-600">
-        <h1 className="text-xl">Recent Projects</h1> <br />
+      <div className=" text-center mt-24 mb-14 border-b-[3px] border-blue-600">
+        <h1 className="text-xl font-bold">Recent Projects</h1> <br />
       </div>
 
       <div className="flex flex-wrap justify-center">
@@ -86,7 +86,7 @@ const Tabs = ({ color }) => {
               </a>
             </li>
           </ul>
-          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+          <div className="flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
             <div className="px-4 py-5 flex-auto">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? 'block' : 'hidden'} id="link1">
@@ -115,8 +115,8 @@ const Tabs = ({ color }) => {
 
 export default function TabsRender() {
   return (
-    <>
+    <section id='projects' >
       <Tabs color="blue" />
-    </>
+    </section>
   );
 }
