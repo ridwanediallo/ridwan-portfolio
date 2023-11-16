@@ -11,7 +11,7 @@ const ContactForm = () => {
         <div className="container flex flex-wrap shadow-lg">
           <img
             src={contactImage}
-            alt="Image"
+            alt="ridwan photo"
             className="md:w-2/5 rounded-l-lg object-cover mr-4"
           />
           <form
