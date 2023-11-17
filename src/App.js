@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import NavigationBar from "./components/NavigationBar";
 import SkillSection from "./components/SkillSection";
 import TabsRender from "./components/Tab";
+import TestimonialsSlider from './components/Recommendation';
 
 function App() {
   const [scrollingPastHero, setScrollingPastHero] = useState(false);
@@ -29,6 +30,7 @@ function App() {
       <Hero/>
       <TabsRender />
       <SkillSection />
+      <TestimonialsSlider />
       <ContactForm />
       <Footer />
     </div>
