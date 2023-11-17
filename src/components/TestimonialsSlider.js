@@ -38,9 +38,6 @@ const TestimonialsSlider = () => {
     }
   }, []);
 
-  // useKeenSlider hook to bind Keen Slider to the component
-  const [slider] = useKeenSlider({ loop: true });
-
   return (
     <section className="bg-gray-50">
       <div className="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
