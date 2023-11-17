@@ -27,7 +27,7 @@ const Tabs = ({ color }) => {
   };
   return (
     <>
-      <div className=" text-center mt-24 mb-14">
+      <div className=" text-center mb-5 mt-10 ml-5 md:mt-24 md:mb-14">
         <h1 className="container mx-auto text-2xl text-start font-bold tracking-tight text-gray-900 sm:text-5xl">
           Recent Projects 📚️
         </h1>{' '}
