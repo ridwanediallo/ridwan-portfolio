@@ -85,7 +85,9 @@ const SkillSection = () => {
   return (
     <section className="bg-blue-600 py-24">
       <div className="container mx-auto px-16 md:px-0">
-        <h2 className="text-3xl font-semibold mb-10 text-white text-center">Skills</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-white sm:text-5xl mb-10">
+          My Skills 💪
+        </h2>
         <div className="flex flex-wrap lg:justify-between gap-10">
           <SkillCategory category="Languages" skills={skills.languages} />
           <SkillCategory category="Frameworks" skills={skills.frameworks} />
