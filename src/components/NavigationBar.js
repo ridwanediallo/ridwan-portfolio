@@ -28,7 +28,7 @@ const NavigationBar = ({ scrollingPastHero }) => {
 
   return (
     <div className="bg-cover bg-center bg-no-repeat" style={navigationStyle}>
-      <nav className="container mx-auto md:flex py-5 px-5 items-center justify-between">
+      <nav className="container mx-auto md:flex py-5 items-center justify-between">
         {/* <img src={logo} alt="" className={`h-16`} /> */}
         <img
           src={profile}
@@ -48,7 +48,7 @@ const NavigationBar = ({ scrollingPastHero }) => {
         >
           {links.map((link, index) => (
             <li
-              className={`cursor-pointer font-bold my-7 md:my-0 md:ml-8 hover:border-b-2 hover:border-[#e87f3a] transition ${
+              className={`cursor-pointer font-bold my-7 md:my-0 md:ml-8 hover:border-b-2 hover:border-blue-600 transition ${
                 scrollingPastHero ? 'md:text-white' : 'text-black'
               }`}
               key={index}
@@ -63,10 +63,10 @@ const NavigationBar = ({ scrollingPastHero }) => {
             to="#contact"
             onClick={toggleMenu}
             smooth
-            className={`btn focus:outline-none text-white py-1 px-3 md:ml-8 rounded md:static ${
+            className={`btn focus:outline-none py-1 px-3 md:ml-8 rounded md:static ${
               scrollingPastHero
-                ? 'bg-[#e87f3a] hover:bg-[#223363]'
-                : 'bg-[#223363] hover:bg-[#e87f3a]'
+                ? 'bg-white text-blue-600'
+                : 'bg-blue-600 text-white'
             }`}
           >
             Contactez nous
