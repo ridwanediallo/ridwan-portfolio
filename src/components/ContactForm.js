@@ -3,11 +3,14 @@ import contactImage from '../images/ridwan.jpg';
 
 const ContactForm = () => {
   return (
-    <section>
-      <div className=" text-center mt-28 mb-14">
-        <h1 className="text-xl">Contact me</h1> <br />
+    <section className="bg-gray-50 ">
+      <div className="container mx-auto text-center mt-28 mb-14">
+        <h1 className="text-start pt-5 text-2xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          Contact me 🤙
+        </h1>{' '}
+        <br />
       </div>
-      <div className="flex flex-wrap justify-center text-gray-600 body-font ">
+      <div className="flex flex-wrap justify-center text-gray-600 body-font pb-5">
         <div className="container flex flex-wrap shadow-lg">
           <img
             src={contactImage}
@@ -17,7 +20,7 @@ const ContactForm = () => {
           <form
             action="https://formspree.io/f/xwkyvenp"
             method="post"
-            className="flex flex-wrap -m-2 md:w-3/5"
+            className="flex flex-wrap -m-2 md:w-3/5 p-4"
           >
             <div className="p-2 w-1/2">
               <div className="">
