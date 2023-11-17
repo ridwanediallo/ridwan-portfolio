@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import NavigationBar from "./components/NavigationBar";
 import SkillSection from "./components/SkillSection";
 import TabsRender from "./components/Tab";
-import TestimonialsSlider from './components/Recommendation';
+import TestimonialsSlider from './components/TestimonialsSlider';
 
 function App() {
   const [scrollingPastHero, setScrollingPastHero] = useState(false);
