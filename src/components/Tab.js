@@ -27,8 +27,11 @@ const Tabs = ({ color }) => {
   };
   return (
     <>
-      <div className=" text-center mt-24 mb-14 border-b-[3px] border-blue-600">
-        <h1 className="text-xl font-bold">Recent Projects</h1> <br />
+      <div className=" text-center mt-24 mb-14">
+        <h1 className="container mx-auto text-2xl text-start font-bold tracking-tight text-gray-900 sm:text-5xl">
+          Recent Projects 📚️
+        </h1>{' '}
+        <br />
       </div>
 
       <div className="flex flex-wrap justify-center">
