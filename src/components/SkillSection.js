@@ -67,7 +67,6 @@ const SkillCategory = ({ category, skills }) => (
           key={index}
           className="p-4 bg-white shadow-md rounded-md text-center hover:bg-black hover:text-white"
         >
-          {/* <i className={`text-4xl ${skill.icon} text-indigo-500 mb-2`}></i> */}
           <img src={skill.icon} alt="" />
           <p
             className="text-lg font-semibold overflow-ellipsis whitespace-nowrap"
@@ -84,7 +83,7 @@ const SkillCategory = ({ category, skills }) => (
 const SkillSection = () => {
   return (
     <section className="bg-blue-600 py-24">
-      <div className="container mx-auto px-16 md:px-0">
+      <div className="container mx-auto px-10 md:px-0">
         <h2 className="text-2xl font-bold tracking-tight text-white sm:text-5xl mb-10">
           My Skills 💪
         </h2>
