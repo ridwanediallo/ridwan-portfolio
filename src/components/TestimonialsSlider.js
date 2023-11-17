@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import KeenSlider from 'keen-slider';
 import 'keen-slider/keen-slider.min.css';
-import { useKeenSlider } from 'keen-slider/react';
 
 const TestimonialsSlider = () => {
   const sliderRef = useRef(null);
