@@ -18,11 +18,11 @@ const Hero = () => {
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi <span className="animate-[wave_5s_ease-in-out_2]">👋</span>,
-            <br className="hidden lg:inline-block" />I am Ridwan
+            Hi <span className="animate-wave inline-block">👋</span>!
+            <br className="hidden lg:inline-block" />I am Ridwan,
           </h1>
           <p className="mb-8  text-white text-base body-font">
-            I am a Full-Stack software engineer, currently working as Code
+            a Full-Stack software engineer, currently working as Code
             Reviewer At Microverse. I have more that one year of experience in
             writing code. I am looking for a position as a backend, frontend, or
             full-stack web developer. I am a dedicated and driven professional
