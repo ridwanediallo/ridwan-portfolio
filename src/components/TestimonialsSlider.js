@@ -4,7 +4,9 @@ import 'keen-slider/keen-slider.min.css';
 import testimonies from '../testimonies';
 
 const TestimonialsSlider = () => {
-  const [ showMore, setShowMore ] = useState(false);
+  const [showMoreStates, setShowMoreStates] = useState(
+    testimonies.map(() => false)
+  );
   const sliderRef = useRef(null);
 
   // Initialize Keen Slider on component mount
@@ -39,9 +41,20 @@ const TestimonialsSlider = () => {
     }
   }, []);
 
-  const toggleShowMore = () => {
-    setShowMore(!showMore);
-  }
+  const toggleShowMore = (index) => {
+      setShowMoreStates((prevStates) => {
+        const newStates = [...prevStates];
+        newStates[index] = !newStates[index];
+        return newStates;
+      });
+  };
+
+  const testimonyLength = testimonies.map(
+    (testimony) => testimony.testimony.length
+  );
+  console.log(testimonyLength);
+
+  // if()
 
   return (
     <section className="bg-gray-50">
@@ -97,11 +110,16 @@ const TestimonialsSlider = () => {
         </div>
         <div className="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
           <div ref={sliderRef} className="keen-slider">
-            {testimonies.map((testimony) => (
+            {testimonies.map((testimony, index) => (
               <div key={testimony.id} className="keen-slider__slide">
                 <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
                   <div>
                     <div className="mt-4">
+                      <img
+                        className="h-16 w-16 rounded-full"
+                        src={testimony.image}
+                        alt=""
+                      />
                       <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
                         {testimony.name}
                       </p>
@@ -153,9 +171,18 @@ const TestimonialsSlider = () => {
                       </div>
 
                       <p className="mt-4 leading-relaxed text-gray-700">
-                        {showMore ? testimony.testimony : testimony.testimony.substring(0, 250) + '...'}
+                        {showMoreStates[index]
+                          ? testimony.testimony
+                          : testimony.testimony.substring(0, 200) + '...'}
                       </p>
-                      <button onClick={toggleShowMore} className="mt-4 text-white bg-blue-600 hover:border hover:text-blue-600 py-2 px-6 focus:outline-none hover:bg-transparent hover:border-blue-600 rounded text-lg">{showMore ? 'Show less' : 'Show more' }</button>
+                      {testimony.testimony.length > 200 && (
+                        <button
+                          onClick={ () => toggleShowMore(index)}
+                          className="mt-4 text-white bg-blue-600 hover:border hover:text-blue-600 py-2 px-6 focus:outline-none hover:bg-transparent hover:border-blue-600 rounded text-lg"
+                        >
+                          {showMoreStates[index] ? 'Show less' : 'Show more'}
+                        </button>
+                      )}
                     </div>
                   </div>
 
