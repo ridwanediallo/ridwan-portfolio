@@ -1,12 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import KeenSlider from 'keen-slider';
 import 'keen-slider/keen-slider.min.css';
-// import testimonials from '../testimonials';
 import testimonies from '../testimonies';
 
 const TestimonialsSlider = () => {
+  const [ showMore, setShowMore ] = useState(false);
   const sliderRef = useRef(null);
-  console.log(testimonies);
 
   // Initialize Keen Slider on component mount
   useEffect(() => {
@@ -39,6 +38,10 @@ const TestimonialsSlider = () => {
       keenSliderNext.addEventListener('click', () => keenSlider.next());
     }
   }, []);
+
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  }
 
   return (
     <section className="bg-gray-50">
@@ -150,8 +153,9 @@ const TestimonialsSlider = () => {
                       </div>
 
                       <p className="mt-4 leading-relaxed text-gray-700">
-                        {testimony.testimony}
+                        {showMore ? testimony.testimony : testimony.testimony.substring(0, 250) + '...'}
                       </p>
+                      <button onClick={toggleShowMore} className="mt-4 text-white bg-blue-600 hover:border hover:text-blue-600 py-2 px-6 focus:outline-none hover:bg-transparent hover:border-blue-600 rounded text-lg">{showMore ? 'Show less' : 'Show more' }</button>
                     </div>
                   </div>
 
