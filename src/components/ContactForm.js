@@ -1,5 +1,5 @@
 import React from 'react';
-import contactImage from '../images/ridwan.jpg';
+import contactImage from '../images/ridwan.png';
 
 const ContactForm = () => {
   return (
