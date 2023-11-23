@@ -1,14 +1,91 @@
-import React, { useState } from 'react';
-import dataObject from '../data';
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Card from './Card';
 
 const Tabs = ({ color }) => {
+  const { t } = useTranslation();
+
+
+  const dataObject = [
+    {
+      id: 'project-2',
+      title: `Space Traveler's Hub`,
+      image: '/images/space-traveler.png',
+      sourceLink: 'https://github.com/ridwanediallo/Space-travelers--hub',
+      liveLink: 'https://ridwanediallo.github.io/Space-travelers--hub/',
+      tech1: 'React',
+      tech2: 'Redux',
+      tech3: 'Bootstrap',
+      tech4: ' React-Router',
+      stack: ['React', 'React-Router', 'Redux', 'Bootstrap'],
+      end: 'Front-End Dev',
+      front: true,
+      description: t('SpaceTHub'),
+    },
+    {
+      id: 'project-3',
+      title: 'Tonic',
+      canopy: 'Canopy',
+      image: '/images/countries.png',
+      sourceLink: 'https://github.com/ridwanediallo/The-Countries',
+      liveLink: 'https://rid-the-counties.netlify.app/',
+      tech1: 'React',
+      tech2: 'Redux',
+      tech3: 'React-Router',
+      stack: ['React', 'React-Router', 'Redux', 'Bootstrap'],
+      front: true,
+      description: t('Countries'),
+    },
+    {
+      id: 'project-4',
+      title: 'BookStore CMS',
+      canopy: 'Canopy',
+      image: '/images/bookstore.png',
+      sourceLink: 'https://github.com/ridwanediallo/Bookstore-CMS',
+      liveLink: 'https://rid-bookstore-cms.netlify.app/',
+      tech1: 'React',
+      tech2: 'Redux',
+      stack: ['React', 'React-Router', 'Redux', 'Bootstrap'],
+      end: 'Front-End Dev',
+      front: true,
+      description: t('BookStore'),
+    },
+    {
+      id: 'project-5',
+      title: 'Budget App',
+      canopy: 'Canopy',
+      image: '/images/countries.png',
+      sourceLink: 'https://github.com/ridwanediallo/Bookstore-CMS',
+      liveLink: 'https://rid-bookstore-cms.netlify.app/',
+      tech1: 'React',
+      tech2: 'Redux',
+      stack: ['React', 'React-Router', 'Redux', 'Bootstrap'],
+      end: 'Front-End Dev',
+      back: true,
+      description: t('BudgetApp'),
+    },
+    {
+      id: 'project-6',
+      title: 'Recipe App',
+      canopy: 'Canopy',
+      image: '/images/bookstore.png',
+      sourceLink: 'https://github.com/ridwanediallo/Bookstore-CMS',
+      liveLink: 'https://rid-bookstore-cms.netlify.app/',
+      tech1: 'React',
+      tech2: 'Redux',
+      stack: ['React', 'React-Router', 'Redux', 'Bootstrap'],
+      end: 'Front-End Dev',
+      back: true,
+      description: t('RecipeApp'),
+    },
+  ];
+
+
   const [openTab, setOpenTab] = useState(1);
   const [data, setData] = useState(dataObject);
 
   const fontEndData = dataObject.filter((data) => data.front === true);
   const backEndData = dataObject.filter((data) => data.back === true);
-
 
   const displayAllProjectHandler = (e) => {
     e.preventDefault();
@@ -29,7 +106,7 @@ const Tabs = ({ color }) => {
     <>
       <div className=" text-center mb-5 mt-10 ml-5 md:mt-24 md:mb-14">
         <h1 className="container mx-auto text-2xl text-start font-bold tracking-tight text-gray-900 sm:text-5xl">
-          Recent Projects 📚️
+          {t('heading-one')} 📚️
         </h1>{' '}
         <br />
       </div>
