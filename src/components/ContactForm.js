@@ -1,12 +1,14 @@
 import React from 'react';
-import contactImage from '../images/ridwan.png';
+import { useTranslation } from 'react-i18next';
+import contactImage from '../images/rid.jpeg';
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-gray-50 ">
       <div className="container mx-auto text-center mt-28 md:mb-14">
         <h1 className="text-start pt-5 ml-5 md:ml-0 text-2xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          Contact me 🤙
+          {t('heading-four')} 🤙
         </h1>{' '}
         <br />
       </div>
