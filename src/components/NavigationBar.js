@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
+import { useTranslation } from 'react-i18next';
+
 import profile from '../images/ridwan-trans-bg.png';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const NavigationBar = ({ scrollingPastHero }) => {
+  const { t } = useTranslation();
+
   let links = [
-    { name: 'Projects', id: 'projects' },
-    { name: 'Skills', id: 'skills' },
-    { name: 'Contact me', id: 'contact' },
+    { name: t('nav-one'), id: 'about-me' },
+    { name: t('nav-two'), id: 'projects' },
+    { name: t('nav-three'), id: 'skills' },
+    { name: t('nav-four'), id: 'testimonies' },
   ];
 
   let [isOpen, setisOpen] = useState(false);
@@ -29,7 +35,6 @@ const NavigationBar = ({ scrollingPastHero }) => {
   return (
     <div className="bg-cover bg-center bg-no-repeat" style={navigationStyle}>
       <nav className="container mx-auto md:flex py-5 items-center justify-between">
-        {/* <img src={logo} alt="" className={`h-16`} /> */}
         <img
           src={profile}
           className="ml-3 h-6 sm:h-9 rounded-full"
@@ -37,6 +42,7 @@ const NavigationBar = ({ scrollingPastHero }) => {
         />
         <div
           onClick={() => setisOpen(!isOpen)}
+          onKeyDown={() => setisOpen(!isOpen)}
           className="w-7 h-7 absolute right-8 top-4 cursor-pointer md:hidden"
         >
           {isOpen ? <XMarkIcon /> : <Bars3BottomRightIcon />}
@@ -69,8 +75,9 @@ const NavigationBar = ({ scrollingPastHero }) => {
                 : 'bg-blue-600 text-white'
             }`}
           >
-            Contactez nous
+            {t('nav-five')}
           </Link>
+          <LanguageSwitcher />
         </ul>
       </nav>
     </div>
