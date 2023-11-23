@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const skills = {
   languages: [
@@ -81,16 +82,17 @@ const SkillCategory = ({ category, skills }) => (
 );
 
 const SkillSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="bg-blue-600 py-24">
       <div className="container mx-auto px-10 md:px-0">
         <h2 className="text-2xl font-bold tracking-tight text-white sm:text-5xl mb-10">
-          My Skills 💪
+          {t('heading-two')} 💪
         </h2>
         <div className="flex flex-wrap lg:justify-between gap-10">
-          <SkillCategory category="Languages" skills={skills.languages} />
-          <SkillCategory category="Frameworks" skills={skills.frameworks} />
-          <SkillCategory category="Tools" skills={skills.tools} />
+          <SkillCategory category={t('languages')} skills={skills.languages} />
+          <SkillCategory category={t('frameworks')} skills={skills.frameworks} />
+          <SkillCategory category={t('tools')} skills={skills.tools} />
         </div>
       </div>
     </section>
