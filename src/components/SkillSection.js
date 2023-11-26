@@ -84,7 +84,7 @@ const SkillCategory = ({ category, skills }) => (
 const SkillSection = () => {
   const { t } = useTranslation();
   return (
-    <section className="bg-blue-600 py-24">
+    <section id='skills' className="bg-blue-600 py-24">
       <div className="container mx-auto px-10 md:px-0">
         <h2 className="text-2xl font-bold tracking-tight text-white sm:text-5xl mb-10">
           {t('heading-two')} 💪
