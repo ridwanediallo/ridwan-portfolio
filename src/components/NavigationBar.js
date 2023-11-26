@@ -13,7 +13,7 @@ const NavigationBar = ({ scrollingPastHero }) => {
     { name: t('nav-one'), id: 'about-me' },
     { name: t('nav-two'), id: 'projects' },
     { name: t('nav-three'), id: 'skills' },
-    { name: t('nav-four'), id: 'testimonies' },
+    { name: t('nav-four'), id: 'testimonials' },
   ];
 
   let [isOpen, setisOpen] = useState(false);
