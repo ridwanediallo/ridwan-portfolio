@@ -35,7 +35,7 @@ const TestimonialsSlider = () => {
       name: `Said Rašinlić`,
       title: 'Software Developer',
       profile: 'https://linkedin.com/in/ridwan-diallo/',
-      image: '/images/ridwan.jpeg',
+      image: '/images/said-profile.jpeg',
       testimony: t('Said'),
     },
     {
@@ -94,7 +94,7 @@ const TestimonialsSlider = () => {
   };
 
   return (
-    <section className="bg-gray-50">
+    <section id="testimonials" className="bg-gray-50">
       <div className="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
         <div className="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
           <h2 className="max-w-xl text-2xl font-bold tracking-tight text-gray-900 sm:text-5xl">
