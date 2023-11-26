@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Card from './Card';
 
 const Tabs = ({ color }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
+  useEffect(() => {
+    // Force re-render on language change
+    i18n.changeLanguage(i18n.language);
+  }, [i18n.language]);
 
   const dataObject = [
     {
@@ -80,15 +84,13 @@ const Tabs = ({ color }) => {
     },
   ];
 
-
   const [openTab, setOpenTab] = useState(1);
   const [data, setData] = useState(dataObject);
 
   const fontEndData = dataObject.filter((data) => data.front === true);
   const backEndData = dataObject.filter((data) => data.back === true);
 
-  const displayAllProjectHandler = (e) => {
-    e.preventDefault();
+  const displayAllProjectHandler = () => {
     setOpenTab(1);
     setData(dataObject);
   };
@@ -103,7 +105,7 @@ const Tabs = ({ color }) => {
     setData(backEndData);
   };
   return (
-    <>
+    <section id="projects">
       <div className=" text-center mb-5 mt-10 ml-5 md:mt-24 md:mb-14">
         <h1 className="container mx-auto text-2xl text-start font-bold tracking-tight text-gray-900 sm:text-5xl">
           {t('heading-one')} 📚️
@@ -189,13 +191,13 @@ const Tabs = ({ color }) => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
 export default function TabsRender() {
   return (
-    <section id='projects' >
+    <section id="projects">
       <Tabs color="blue" />
     </section>
   );
