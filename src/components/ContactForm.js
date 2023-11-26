@@ -5,7 +5,7 @@ import contactImage from '../images/rid.jpeg';
 const ContactForm = () => {
   const { t } = useTranslation();
   return (
-    <section className="bg-gray-50 ">
+    <section id="contact" className="bg-gray-50 ">
       <div className="container mx-auto text-center mt-28 md:mb-14">
         <h1 className="text-start pt-5 ml-5 md:ml-0 text-2xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           {t('heading-four')} 🤙
