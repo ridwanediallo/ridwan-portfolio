@@ -10,7 +10,7 @@ const NavigationBar = ({ scrollingPastHero }) => {
   const { t } = useTranslation();
 
   let links = [
-    { name: t('nav-one'), id: 'about-me' },
+    { name: t('nav-one'), id: 'hero' },
     { name: t('nav-two'), id: 'projects' },
     { name: t('nav-three'), id: 'skills' },
     { name: t('nav-four'), id: 'testimonials' },
