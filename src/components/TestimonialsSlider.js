@@ -11,7 +11,7 @@ const TestimonialsSlider = () => {
       id: 1,
       name: `Emirjeta Veisllari`,
       title: 'Full-Stack web Developer',
-      image: '/images/ridwan.jpeg',
+      image: '/images/Emi.jpg',
       testimony: t('Emi'),
     },
     {
