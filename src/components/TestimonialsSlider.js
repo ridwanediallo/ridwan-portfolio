@@ -19,7 +19,7 @@ const TestimonialsSlider = () => {
       name: 'Brahim Didi',
       title: 'Full-Stack Developer',
       profile: 'https://linkedin.com/in/ridwan-diallo/',
-      image: '/images/ridwan.jpeg',
+      image: '/images/brahim.jpeg',
       testimony: t('Brahim'),
     },
     {
@@ -27,7 +27,7 @@ const TestimonialsSlider = () => {
       name: 'Adekunle Ismail',
       title: 'Web Developer',
       profile: 'https://linkedin.com/in/ridwan-diallo/',
-      image: '/images/ridwan.jpeg',
+      image: '/images/ismail.jpeg',
       testimony: t('Ismail'),
     },
     {
@@ -43,7 +43,7 @@ const TestimonialsSlider = () => {
       name: 'Mohammed Mahdi',
       title: 'Full-Stack Developer',
       profile: 'https://linkedin.com/in/ridwan-diallo/',
-      image: '/images/ridwan.jpeg',
+      image: '/images/muhammad.jpeg',
       testimony: t('Mohammad'),
     },
   ];
