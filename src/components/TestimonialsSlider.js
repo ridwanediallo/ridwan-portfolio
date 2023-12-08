@@ -19,7 +19,7 @@ const TestimonialsSlider = () => {
       name: 'Brahim Didi',
       title: 'Full-Stack Developer',
       profile: 'https://linkedin.com/in/ridwan-diallo/',
-      image: '/images/brahim.jpeg',
+      image: '/images/brahim.jpg',
       testimony: t('Brahim'),
     },
     {
