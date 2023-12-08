@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Card from './Card';
 
 const Tabs = ({ color }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  useEffect(() => {
-    // Force re-render on language change
-    i18n.changeLanguage(i18n.language);
-  }, [i18n.language]);
+
 
   const dataObject = [
     {
